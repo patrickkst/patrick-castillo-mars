@@ -1,0 +1,48 @@
+body {
+  background-color: aqua;
+  color: azure;
+  font-family: "Courier New", Courier, monospace;
+}
+#About {
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+}
+
+#Experience {
+  padding: 10px;
+  margin: 10px;
+}
+#Connect {
+  padding: 10px;
+  margin: 10px;
+}
+h1 {
+  color: red;
+  size: 20px;
+  font-weight: 100;
+  text-align: center;
+}
+h2 {
+  color: blue;
+  size: 15px;
+  font-weight: 200;
+}
+h3 {
+  color: red;
+  size: 20px;
+  font-weight: 100;
+}
+#Experience li {
+  border: 1px;
+  width: fit-content;
+  border-color: blueviolet;
+  border-style: dotted;
+}
+img {
+  width: 50px;
+  height: 50px;
+}
+#Connect li {
+  list-style-type: none;
+}
