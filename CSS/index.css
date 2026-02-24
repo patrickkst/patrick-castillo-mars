@@ -1,54 +1,209 @@
+/*Desktop Default layout*/
 body {
-  background-color: aqua;
-  color: azure;
+  background-color: white;
+  color: black;
   font-family: "Courier New", Courier, monospace;
 }
+
 #About {
-  padding: 10px;
-  margin: 10px;
-  text-align: center;
+  border: 0.5em solid aqua;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #Experience {
-  padding: auto;
+  border: 0.5em solid aqua;
   margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  text-align: center;
+  padding: auto;
 }
 #Connect {
-  padding: 10px;
-  margin: 10px;
+  padding: 1em;
+  margin: 1em;
+  border: 0.5em solid aqua;
   display: flex;
   flex-direction: row;
   align-items: baseline;
 }
 h1 {
-  color: red;
-  size: 20px;
+  color: black;
+  size: 2em;
   font-weight: 100;
   text-align: center;
 }
 h2 {
   color: blue;
-  size: 15px;
+  size: 15em;
   font-weight: 200;
 }
 h3 {
   color: red;
-  size: 20px;
+  size: 2em;
   font-weight: 100;
 }
-#Experience ul {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-self: auto;
-  list-style-type: none;
-  gap: 50px;
-}
 img {
-  width: 50px;
-  height: 50px;
+  width: 2em;
+  height: 2em;
 }
-#Connect li {
-  list-style-type: none;
+#side {
+  display: flex;
+  text-align: center;
+  margin: 0;
+  justify-content: flex-end;
+  padding-left: 10em;
+  padding-right: 10em;
+}
+#pAbout {
+  text-align: center;
+}
+#borderExperience {
+  border: 0.1em solid aqua;
+  display: flex;
+  flex-direction: column;
+  padding: auto;
+}
+/*Phone queries*/
+@media (max-width: 600px) {
+  body {
+    background-color: khaki;
+    color: black;
+    font-family: "Courier New", Courier, monospace;
+  }
+
+  #About {
+    border: 0.5em solid greenyellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #Experience {
+    border: 0.5em solid greenyellow;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    text-align: center;
+    padding: auto;
+  }
+  #Connect {
+    padding: 1em;
+    margin: 1em;
+    border: 0.5em solid aqua;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+  }
+  h1 {
+    color: black;
+    background-color: goldenrod;
+    size: 2em;
+    font-weight: 100;
+    text-align: center;
+  }
+  h2 {
+    color: blue;
+    size: 15em;
+    font-weight: 200;
+  }
+  h3 {
+    color: red;
+    size: 2em;
+    font-weight: 100;
+  }
+  img {
+    width: 2em;
+    height: 2em;
+  }
+  #side {
+    display: flex;
+    text-align: center;
+    margin: 0;
+    justify-content: flex-end;
+  }
+  #pAbout {
+    text-align: center;
+  }
+  #borderExperience {
+    border: 0.1em solid greenyellow;
+    display: flex;
+    flex-direction: column;
+    padding: auto;
+  }
+}
+/*Tablet queries*/
+@media (600px < width < 1000px) {
+  body {
+    background-color: white;
+    color: black;
+    font-family: "Courier New", Courier, monospace;
+  }
+
+  #About {
+    border: 0.5em solid green;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #Experience {
+    border: 0.5em solid green;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    text-align: center;
+    padding: auto;
+  }
+  #Connect {
+    padding: 1em;
+    margin: 1em;
+    border: 0.5em solid aqua;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+  }
+  h1 {
+    color: black;
+    size: 2em;
+    font-weight: 100;
+    text-align: center;
+  }
+  h2 {
+    color: blue;
+    size: 15em;
+    font-weight: 200;
+  }
+  h3 {
+    color: red;
+    size: 2em;
+    font-weight: 100;
+  }
+  img {
+    width: 2em;
+    height: 2em;
+  }
+  #side {
+    display: flex;
+    text-align: center;
+    margin: 0;
+    justify-content: flex-end;
+  }
+  #pAbout {
+    text-align: center;
+  }
+  #borderExperience {
+    border: 0.1em solid green;
+    display: flex;
+    flex-direction: column;
+    padding: auto;
+    flex: 1;
+  }
 }
