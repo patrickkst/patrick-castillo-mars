@@ -72,6 +72,10 @@ img {
   display: flex;
   flex-direction: column;
 }
+#Message form {
+  display: flex;
+  flex-direction: row;
+}
 
 /*Tablet queries*/
 @media (min-width: 600px) and (max-width: 1000px) {
@@ -147,6 +151,10 @@ img {
     display: flex;
     flex-direction: column;
   }
+  #Message form {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 /*Phone queries*/
@@ -215,6 +223,10 @@ img {
     justify-content: flex-start;
   }
   #Skills ul {
+    display: flex;
+    flex-direction: column;
+  }
+  #Message form {
     display: flex;
     flex-direction: column;
   }
