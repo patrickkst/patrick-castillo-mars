@@ -1,12 +1,12 @@
 /*Desktop Default layout*/
 body {
-  background-color: white;
+  background-color: khaki;
   color: black;
   font-family: "Courier New", Courier, monospace;
 }
 
 #About {
-  border: 0.5em solid aqua;
+  border: 0.5em solid goldenrod;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -14,7 +14,7 @@ body {
 }
 
 #Experience {
-  border: 0.5em solid aqua;
+  border: 0.5em solid goldenrod;
   margin: auto;
   display: flex;
   flex-direction: row;
@@ -25,7 +25,7 @@ body {
 #Connect {
   padding: 1em;
   margin: 1em;
-  border: 0.5em solid aqua;
+  border: 0.5em solid goldenrod;
   display: flex;
   flex-direction: row;
   align-items: baseline;
@@ -35,6 +35,7 @@ h1 {
   font-size: 2em;
   font-weight: 100;
   text-align: center;
+  background-color: blanchedalmond;
 }
 h2 {
   color: blue;
@@ -62,11 +63,92 @@ img {
   text-align: center;
 }
 #borderExperience {
-  border: 0.1em solid aqua;
+  border: 0.1em solid goldenrod;
   display: flex;
   flex-direction: column;
   padding: auto;
 }
+#Skills ul {
+  display: flex;
+  flex-direction: column;
+}
+
+/*Tablet queries*/
+@media (min-width: 600px) and (max-width: 1000px) {
+  body {
+    background-color: khaki;
+    color: black;
+    font-family: "Courier New", Courier, monospace;
+  }
+
+  #About {
+    border: 0.5em solid rgb(119, 128, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #Experience {
+    border: 0.5em solid rgb(119, 128, 0);
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    text-align: center;
+    padding: auto;
+  }
+  #Connect {
+    padding: 1em;
+    margin: 1em;
+    border: 0.5em solid rgb(119, 128, 0);
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+  }
+  h1 {
+    color: black;
+    font-size: 2em;
+    font-weight: 100;
+    text-align: center;
+    background-color: chocolate;
+  }
+  h2 {
+    color: blue;
+    font-size: 1em;
+    font-weight: 200;
+  }
+  h3 {
+    color: red;
+    font-size: 0.8em;
+    font-weight: 100;
+  }
+  img {
+    width: 2em;
+    height: 2em;
+  }
+  #side {
+    display: flex;
+    text-align: center;
+    margin: 0;
+    justify-content: flex-end;
+  }
+  #pAbout {
+    text-align: center;
+  }
+  #borderExperience {
+    border: 0.1em solid rgb(119, 128, 0);
+    display: flex;
+    flex-direction: column;
+    padding: auto;
+    flex: 1;
+  }
+  #Skills ul {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 /*Phone queries*/
 @media (max-width: 600px) {
   body {
@@ -85,17 +167,13 @@ img {
 
   #Experience {
     border: 0.5em solid greenyellow;
-    margin: auto;
-    display: flex;
-    flex-direction: row;
-    flex: 1;
-    text-align: center;
-    padding: auto;
+    padding-right: 25em;
+    margin-left: -5em;
   }
   #Connect {
     padding: 1em;
     margin: 1em;
-    border: 0.5em solid aqua;
+    border: 0.5em solid greenyellow;
     display: flex;
     flex-direction: row;
     align-items: baseline;
@@ -124,8 +202,7 @@ img {
   #side {
     display: flex;
     text-align: center;
-    margin: 0;
-    justify-content: flex-end;
+    flex-direction: column;
   }
   #pAbout {
     text-align: center;
@@ -135,75 +212,10 @@ img {
     display: flex;
     flex-direction: column;
     padding: auto;
+    justify-content: flex-start;
   }
-}
-/*Tablet queries*/
-@media (min-width: 600px) and (max-width: 1000px) {
-  body {
-    background-color: white;
-    color: black;
-    font-family: "Courier New", Courier, monospace;
-  }
-
-  #About {
-    border: 0.5em solid green;
+  #Skills ul {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  #Experience {
-    border: 0.5em solid green;
-    margin: auto;
-    display: flex;
-    flex-direction: row;
-    flex: 1;
-    text-align: center;
-    padding: auto;
-  }
-  #Connect {
-    padding: 1em;
-    margin: 1em;
-    border: 0.5em solid aqua;
-    display: flex;
-    flex-direction: row;
-    align-items: baseline;
-  }
-  h1 {
-    color: black;
-    font-size: 2em;
-    font-weight: 100;
-    text-align: center;
-  }
-  h2 {
-    color: blue;
-    font-size: 1em;
-    font-weight: 200;
-  }
-  h3 {
-    color: red;
-    font-size: 0.8em;
-    font-weight: 100;
-  }
-  img {
-    width: 2em;
-    height: 2em;
-  }
-  #side {
-    display: flex;
-    text-align: center;
-    margin: 0;
-    justify-content: flex-end;
-  }
-  #pAbout {
-    text-align: center;
-  }
-  #borderExperience {
-    border: 0.1em solid green;
-    display: flex;
-    flex-direction: column;
-    padding: auto;
-    flex: 1;
   }
 }
