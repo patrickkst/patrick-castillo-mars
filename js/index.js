@@ -36,3 +36,23 @@ messageForm.addEventListener("submit", function (event) {
   messageList.appendChild(newMessage);
   event.target.reset();
 });
+fetch(`https://api.github.com/users/patrickkst/repos`)
+  .then((response) => {
+    if (!response.ok) {
+      throw new Error(response.status);
+    }
+    return response.json();
+  })
+  .then((repositories) => {
+    console.log(repositories);
+    const projectSection = document.getElementById("Projects");
+    const projectList = projectSection.querySelector("ul");
+    for (let i = 0; repositories.length > i; i++) {
+      const project = document.createElement("li");
+      project.innerText = repositories[i].name;
+      projectList.appendChild(project);
+    }
+  })
+  .catch((error) => {
+    console.error(error);
+  });

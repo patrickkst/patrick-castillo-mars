@@ -76,6 +76,10 @@ img {
   display: flex;
   flex-direction: row;
 }
+#Projects ul {
+  display: flex;
+  flex-direction: column-reverse;
+}
 
 /*Tablet queries*/
 @media (min-width: 600px) and (max-width: 1000px) {
@@ -91,16 +95,13 @@ img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-right: -1em;
   }
 
   #Experience {
     border: 0.5em solid rgb(119, 128, 0);
-    margin: auto;
-    display: flex;
-    flex-direction: row;
-    flex: 1;
-    text-align: center;
-    padding: auto;
+    margin-right: -1em;
+    padding-right: 25em;
   }
   #Connect {
     padding: 1em;
@@ -134,8 +135,7 @@ img {
   #side {
     display: flex;
     text-align: center;
-    margin: 0;
-    justify-content: flex-end;
+    flex-direction: column;
   }
   #pAbout {
     text-align: center;
@@ -145,7 +145,7 @@ img {
     display: flex;
     flex-direction: column;
     padding: auto;
-    flex: 1;
+    justify-content: flex-start;
   }
   #Skills ul {
     display: flex;
@@ -154,6 +154,12 @@ img {
   #Message form {
     display: flex;
     flex-direction: column;
+  }
+  #Projects ul {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-grow: initial;
+    flex-wrap: wrap;
   }
 }
 
@@ -229,5 +235,9 @@ img {
   #Message form {
     display: flex;
     flex-direction: column;
+  }
+  #Projects ul {
+    display: flex;
+    flex-direction: column-reverse;
   }
 }
